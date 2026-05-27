@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--color-alabaster); font-family: var(--font-body); padding: 20px; }
+  .scale { display: flex; gap: 4px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); }
+  .step { flex: 1; height: 100px; display: flex; flex-direction: column; justify-content: flex-end; padding: 8px 6px; }
+  .step-label { font-size: 10px; font-weight: 600; letter-spacing: 0.04em; }
+  .step-hex { font-family: var(--font-mono); font-size: 9px; margin-top: 2px; }
+  .label-row { display: flex; justify-content: space-between; margin-top: 10px; padding: 0 2px; }
+  .label-row span { font-size: 11px; color: var(--fg-muted); }
+</style>
+</head>
+<body>
+<div class="scale">
+  <div class="step" style="background:#E6FBF5"><span class="step-label" style="color:#1A2238">50</span><span class="step-hex" style="color:#4A5568">E6FBF5</span></div>
+  <div class="step" style="background:#B3F1E0"><span class="step-label" style="color:#1A2238">100</span><span class="step-hex" style="color:#4A5568">B3F1E0</span></div>
+  <div class="step" style="background:#66E3C1"><span class="step-label" style="color:#1A2238">200</span><span class="step-hex" style="color:#1A2238">66E3C1</span></div>
+  <div class="step" style="background:#33D9A8"><span class="step-label" style="color:#1A2238">300</span><span class="step-hex" style="color:#1A2238">33D9A8</span></div>
+  <div class="step" style="background:#20C997; outline: 2px solid #1A2238; outline-offset: -3px; border-radius: 2px;"><span class="step-label" style="color:#fff">400 ★</span><span class="step-hex" style="color:#fff">20C997</span></div>
+  <div class="step" style="background:#18B087"><span class="step-label" style="color:#fff">500</span><span class="step-hex" style="color:rgba(255,255,255,0.7)">18B087</span></div>
+  <div class="step" style="background:#109870"><span class="step-label" style="color:#fff">600</span><span class="step-hex" style="color:rgba(255,255,255,0.7)">109870</span></div>
+  <div class="step" style="background:#087F5B"><span class="step-label" style="color:#fff">700</span><span class="step-hex" style="color:rgba(255,255,255,0.7)">087F5B</span></div>
+</div>
+<div class="label-row"><span>Teal Scale</span><span>★ = Base token</span></div>
+</body>
+</html>

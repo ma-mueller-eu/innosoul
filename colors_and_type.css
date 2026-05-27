@@ -1,0 +1,288 @@
+/* ============================================================
+   InnoSoul Consulting — Design System Tokens
+   colors_and_type.css
+   ============================================================ */
+
+/* ── Google Fonts ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+/* ── Base Color Palette ───────────────────────────────────── */
+:root {
+  /* Core Brand Colors */
+  --color-navy:      #1A2238;   /* Deep Midnight Navy — primary dark */
+  --color-teal:      #20C997;   /* Bioluminescent Teal — CTA / highlight */
+  --color-lavender:  #805AD5;   /* Electric Lavender — secondary accent */
+  --color-slate:     #4A5568;   /* Slate Grey — body text */
+  --color-alabaster: #F7FAFC;   /* Soft Alabaster — page background */
+  --color-white:     #FFFFFF;   /* Pure White — cards, contrast */
+
+  /* Teal scale */
+  --color-teal-50:   #E6FBF5;
+  --color-teal-100:  #B3F1E0;
+  --color-teal-200:  #66E3C1;
+  --color-teal-300:  #33D9A8;
+  --color-teal-400:  #20C997;   /* base */
+  --color-teal-500:  #18B087;
+  --color-teal-600:  #109870;
+  --color-teal-700:  #087F5B;
+
+  /* Navy scale */
+  --color-navy-50:   #EEF0F5;
+  --color-navy-100:  #C5CBD9;
+  --color-navy-200:  #8C97B3;
+  --color-navy-300:  #5A6685;
+  --color-navy-400:  #2E3E5E;
+  --color-navy-500:  #1A2238;   /* base */
+  --color-navy-600:  #131929;
+  --color-navy-700:  #0C101A;
+
+  /* Lavender scale */
+  --color-lavender-50:   #F3EEFF;
+  --color-lavender-100:  #D9C9F5;
+  --color-lavender-200:  #B399EA;
+  --color-lavender-300:  #9B7ADF;
+  --color-lavender-400:  #805AD5;  /* base */
+  --color-lavender-500:  #6A47BB;
+  --color-lavender-600:  #5435A0;
+
+  /* Neutral / Slate scale */
+  --color-neutral-50:  #F7FAFC;
+  --color-neutral-100: #EDF2F7;
+  --color-neutral-200: #E2E8F0;
+  --color-neutral-300: #CBD5E0;
+  --color-neutral-400: #A0AEC0;
+  --color-neutral-500: #718096;
+  --color-neutral-600: #4A5568;   /* slate base */
+  --color-neutral-700: #2D3748;
+  --color-neutral-800: #1A202C;
+  --color-neutral-900: #171923;
+
+  /* ── Semantic Color Roles ─────────────────────────────── */
+
+  /* Backgrounds */
+  --bg-page:          var(--color-alabaster);
+  --bg-card:          var(--color-white);
+  --bg-dark:          var(--color-navy);
+  --bg-teal-subtle:   var(--color-teal-50);
+  --bg-lavender-subtle: var(--color-lavender-50);
+
+  /* Foreground / Text */
+  --fg-primary:       var(--color-navy);
+  --fg-body:          var(--color-slate);
+  --fg-muted:         var(--color-neutral-400);
+  --fg-on-dark:       var(--color-white);
+  --fg-on-dark-muted: rgba(255,255,255,0.65);
+
+  /* Interactive / Brand */
+  --color-cta:        #109870;   /* Teal 600 — AA contrast on white */
+  --color-cta-hover:  #087F5B;   /* Teal 700 — hover state */
+  --color-accent:     var(--color-lavender);
+  --color-accent-hover: var(--color-lavender-500);
+
+  /* Borders */
+  --border-subtle:    var(--color-neutral-200);
+  --border-medium:    var(--color-neutral-300);
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px rgba(32, 201, 151, 0.35);
+
+  /* ── Shadows ──────────────────────────────────────────── */
+  --shadow-xs:     0 1px 3px rgba(26, 34, 56, 0.06);
+  --shadow-sm:     0 2px 8px rgba(26, 34, 56, 0.08);
+  --shadow-md:     0 4px 16px rgba(26, 34, 56, 0.10);
+  --shadow-lg:     0 8px 32px rgba(26, 34, 56, 0.14);
+  --shadow-xl:     0 16px 48px rgba(26, 34, 56, 0.18);
+
+  /* ── Border Radius ────────────────────────────────────── */
+  --radius-xs:   4px;
+  --radius-sm:   6px;
+  --radius-md:   8px;    /* buttons, inputs */
+  --radius-lg:   12px;   /* cards */
+  --radius-xl:   16px;   /* large panels */
+  --radius-full: 9999px; /* pill badges */
+
+  /* ── Spacing Scale (4px base) ─────────────────────────── */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+  --space-32:  128px;
+
+  /* ── Font Families ────────────────────────────────────── */
+  --font-display: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:    'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+
+  /* ── Font Weights ─────────────────────────────────────── */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ── Type Scale ───────────────────────────────────────── */
+  --text-xs:   0.75rem;    /*  12px */
+  --text-sm:   0.875rem;   /*  14px */
+  --text-base: 1rem;       /*  16px */
+  --text-lg:   1.125rem;   /*  18px */
+  --text-xl:   1.25rem;    /*  20px */
+  --text-2xl:  1.5rem;     /*  24px */
+  --text-3xl:  1.875rem;   /*  30px */
+  --text-4xl:  2.25rem;    /*  36px */
+  --text-5xl:  3rem;       /*  48px */
+  --text-6xl:  3.75rem;    /*  60px */
+  --text-7xl:  4.5rem;     /*  72px */
+
+  /* ── Line Heights ─────────────────────────────────────── */
+  --leading-tight:  1.2;
+  --leading-snug:   1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.65;
+  --leading-loose:  1.8;
+
+  /* ── Letter Spacing ───────────────────────────────────── */
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-wider:  0.08em;
+  --tracking-widest: 0.12em;
+
+  /* ── Z-Index Scale ────────────────────────────────────── */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-dropdown:200;
+  --z-sticky:  300;
+  --z-modal:   400;
+  --z-toast:   500;
+
+  /* ── Transitions ──────────────────────────────────────── */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* ── Max Widths ───────────────────────────────────────── */
+  --max-w-content: 1200px;
+  --max-w-text:    680px;
+  --max-w-narrow:  480px;
+}
+
+/* ── Semantic Element Styles ──────────────────────────────── */
+
+/* Display / Heading styles */
+.h1, h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-primary);
+}
+
+.h2, h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-primary);
+}
+
+.h3, h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-snug);
+  color: var(--fg-primary);
+}
+
+.h4, h4 {
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-snug);
+  color: var(--fg-primary);
+}
+
+.h5, h5 {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+  color: var(--fg-primary);
+}
+
+/* Overline / label */
+.overline {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-teal);
+}
+
+/* Body text */
+p, .body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--fg-body);
+}
+
+.body-lg {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--fg-body);
+}
+
+.body-sm {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--fg-body);
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  line-height: var(--leading-normal);
+  color: var(--fg-muted);
+}
+
+/* Display quote / pull quote */
+.display-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-3xl);
+  line-height: var(--leading-snug);
+  color: var(--fg-primary);
+}
+
+/* Links */
+a {
+  color: var(--color-cta);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+a:hover {
+  color: var(--color-cta-hover);
+  text-decoration: underline;
+}
+
+/* Code */
+code, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--color-neutral-100);
+  color: var(--color-navy);
+  padding: 0.1em 0.35em;
+  border-radius: var(--radius-xs);
+}

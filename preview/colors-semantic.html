@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--color-alabaster); font-family: var(--font-body); padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+  .row { display: flex; align-items: center; gap: 12px; background: white; border-radius: var(--radius-md); padding: 10px 14px; box-shadow: var(--shadow-xs); }
+  .dot { width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0; }
+  .role { font-size: 11px; font-weight: 600; color: var(--color-navy); min-width: 120px; }
+  .desc { font-size: 11px; color: var(--fg-muted); flex: 1; }
+  .hex { font-family: var(--font-mono); font-size: 10px; color: var(--fg-muted); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="dot" style="background:#1A2238"></div>
+    <div class="role">fg-primary</div>
+    <div class="desc">Headlines, nav, dark UI</div>
+    <div class="hex">#1A2238</div>
+  </div>
+  <div class="row">
+    <div class="dot" style="background:#4A5568"></div>
+    <div class="role">fg-body</div>
+    <div class="desc">Body text, sublines</div>
+    <div class="hex">#4A5568</div>
+  </div>
+  <div class="row">
+    <div class="dot" style="background:#A0AEC0"></div>
+    <div class="role">fg-muted</div>
+    <div class="desc">Captions, placeholders</div>
+    <div class="hex">#A0AEC0</div>
+  </div>
+  <div class="row">
+    <div class="dot" style="background:#20C997"></div>
+    <div class="role">color-cta</div>
+    <div class="desc">Buttons, links, icons</div>
+    <div class="hex">#20C997</div>
+  </div>
+  <div class="row">
+    <div class="dot" style="background:#805AD5"></div>
+    <div class="role">color-accent</div>
+    <div class="desc">Badges, secondary CTAs</div>
+    <div class="hex">#805AD5</div>
+  </div>
+  <div class="row">
+    <div class="dot" style="background:#F7FAFC; border: 1px solid #E2E8F0;"></div>
+    <div class="role">bg-page</div>
+    <div class="desc">Page background</div>
+    <div class="hex">#F7FAFC</div>
+  </div>
+  <div class="row">
+    <div class="dot" style="background:#FFFFFF; border: 1px solid #E2E8F0;"></div>
+    <div class="role">bg-card</div>
+    <div class="desc">Card / panel backgrounds</div>
+    <div class="hex">#FFFFFF</div>
+  </div>
+  <div class="row">
+    <div class="dot" style="background:#1A2238"></div>
+    <div class="role">bg-dark</div>
+    <div class="desc">Dark sections, footer</div>
+    <div class="hex">#1A2238</div>
+  </div>
+</body>
+</html>

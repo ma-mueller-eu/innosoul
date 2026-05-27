@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #1A2238; font-family: var(--font-body); padding: 24px; display: flex; flex-direction: column; gap: 20px; }
+  .prop-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.35); font-family: 'DM Sans', sans-serif; margin-bottom: 8px; }
+  .prop-surfaces { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; }
+  .surface { display: flex; align-items: center; justify-content: center; padding: 28px 20px; }
+  .light { background: #F7FAFC; }
+  .dark { background: #1A2238; }
+  .mid { background: #0C101A; }
+  .surface-label { font-size: 9px; font-family: 'DM Sans', sans-serif; color: rgba(255,255,255,0.2); text-align: center; margin-top: 6px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .col { display: flex; flex-direction: column; align-items: center; }
+</style>
+</head>
+<body>
+
+<!-- Full lockup -->
+<div>
+  <div class="prop-label">Full lockup — light · dark · deep black</div>
+  <div class="prop-surfaces">
+    <div class="surface light">
+      <svg width="175" height="48" viewBox="0 0 175 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 12 A15 15 0 0 1 12 42 Z" fill="#1A2238"/>
+        <path d="M30 4 A15 15 0 0 0 30 34 Z" fill="#20C997"/>
+        <text x="50" y="30" font-family="Playfair Display, serif" font-size="21" font-weight="700" fill="#1A2238" letter-spacing="-0.5">Inno<tspan fill="#20C997">Soul</tspan></text>
+        <text x="51" y="43" font-family="DM Sans, sans-serif" font-size="7.5" font-weight="500" fill="#A0AEC0" letter-spacing="1.8">CONSULTING</text>
+      </svg>
+    </div>
+    <div class="surface dark">
+      <svg width="175" height="48" viewBox="0 0 175 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 12 A15 15 0 0 1 12 42 Z" fill="rgba(255,255,255,0.18)"/>
+        <path d="M30 4 A15 15 0 0 0 30 34 Z" fill="#20C997"/>
+        <text x="50" y="30" font-family="Playfair Display, serif" font-size="21" font-weight="700" fill="white" letter-spacing="-0.5">Inno<tspan fill="#20C997">Soul</tspan></text>
+        <text x="51" y="43" font-family="DM Sans, sans-serif" font-size="7.5" font-weight="500" fill="rgba(255,255,255,0.35)" letter-spacing="1.8">CONSULTING</text>
+      </svg>
+    </div>
+    <div class="surface mid">
+      <svg width="175" height="48" viewBox="0 0 175 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 12 A15 15 0 0 1 12 42 Z" fill="rgba(255,255,255,0.1)"/>
+        <path d="M30 4 A15 15 0 0 0 30 34 Z" fill="#20C997"/>
+        <text x="50" y="30" font-family="Playfair Display, serif" font-size="21" font-weight="700" fill="white" letter-spacing="-0.5">Inno<tspan fill="#20C997">Soul</tspan></text>
+        <text x="51" y="43" font-family="DM Sans, sans-serif" font-size="7.5" font-weight="500" fill="rgba(255,255,255,0.3)" letter-spacing="1.8">CONSULTING</text>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- Mark only (icon / favicon) -->
+<div>
+  <div class="prop-label">Mark only — icon & favicon use</div>
+  <div class="prop-surfaces">
+    <div class="surface light">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 10 A15 15 0 0 1 10 40 Z" fill="#1A2238"/>
+        <path d="M28 4 A15 15 0 0 0 28 34 Z" fill="#20C997"/>
+      </svg>
+    </div>
+    <div class="surface dark">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 10 A15 15 0 0 1 10 40 Z" fill="rgba(255,255,255,0.2)"/>
+        <path d="M28 4 A15 15 0 0 0 28 34 Z" fill="#20C997"/>
+      </svg>
+    </div>
+    <div class="surface mid">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 10 A15 15 0 0 1 10 40 Z" fill="rgba(255,255,255,0.12)"/>
+        <path d="M28 4 A15 15 0 0 0 28 34 Z" fill="#20C997"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- Wordmark only -->
+<div>
+  <div class="prop-label">Wordmark only — text-only use</div>
+  <div class="prop-surfaces">
+    <div class="surface light">
+      <svg width="140" height="28" viewBox="0 0 140 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" font-family="Playfair Display, serif" font-size="21" font-weight="700" fill="#1A2238" letter-spacing="-0.5">Inno<tspan fill="#20C997">Soul</tspan></text>
+      </svg>
+    </div>
+    <div class="surface dark">
+      <svg width="140" height="28" viewBox="0 0 140 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" font-family="Playfair Display, serif" font-size="21" font-weight="700" fill="white" letter-spacing="-0.5">Inno<tspan fill="#20C997">Soul</tspan></text>
+      </svg>
+    </div>
+    <div class="surface mid">
+      <svg width="140" height="28" viewBox="0 0 140 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" font-family="Playfair Display, serif" font-size="21" font-weight="700" fill="white" letter-spacing="-0.5">Inno<tspan fill="#20C997">Soul</tspan></text>
+      </svg>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

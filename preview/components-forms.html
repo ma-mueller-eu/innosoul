@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--color-alabaster); font-family: var(--font-body); padding: 24px; display: flex; flex-direction: column; gap: 16px; }
+  .field-group { display: flex; flex-direction: column; gap: 5px; }
+  .field-label { font-size: 12px; font-weight: 600; color: var(--color-navy); }
+  .field-input { font-family: var(--font-body); font-size: 14px; color: var(--color-navy); border: 1.5px solid var(--color-neutral-300); border-radius: 8px; padding: 9px 13px; background: white; outline: none; width: 100%; }
+  .field-input::placeholder { color: var(--fg-muted); }
+  .field-input.focused { border-color: var(--color-teal); box-shadow: 0 0 0 3px rgba(32,201,151,0.2); }
+  .field-input.error { border-color: #E53E3E; }
+  .field-hint { font-size: 11px; color: var(--fg-muted); }
+  .field-error { font-size: 11px; color: #E53E3E; }
+  .textarea { resize: none; height: 72px; }
+  .row { display: flex; gap: 12px; }
+  .row .field-group { flex: 1; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="field-group">
+      <label class="field-label">Name</label>
+      <input class="field-input" type="text" placeholder="Dr. Max Mustermann" value="Dr. Max Mustermann">
+    </div>
+    <div class="field-group">
+      <label class="field-label">E-Mail</label>
+      <input class="field-input focused" type="email" placeholder="max@company.de" value="max@company.de">
+    </div>
+  </div>
+  <div class="field-group">
+    <label class="field-label">Unternehmen</label>
+    <input class="field-input" type="text" placeholder="MedTech GmbH">
+    <span class="field-hint">Ihr Unternehmensname (optional)</span>
+  </div>
+  <div class="field-group">
+    <label class="field-label">Projektbeschreibung</label>
+    <textarea class="field-input textarea error" placeholder="Kurze Beschreibung Ihres Forschungsvorhabens…"></textarea>
+    <span class="field-error">Bitte beschreiben Sie kurz Ihr Vorhaben.</span>
+  </div>
+</body>
+</html>

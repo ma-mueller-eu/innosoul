@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--color-alabaster); font-family: var(--font-body); padding: 24px 28px; display: flex; flex-direction: column; gap: 20px; }
+  .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-muted); min-width: 70px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-body); font-weight: 600; font-size: 14px; border-radius: 8px; padding: 10px 22px; cursor: pointer; border: none; transition: all 150ms ease; }
+  .btn-primary { background: #109870; color: white; }
+  .btn-secondary { background: transparent; color: #1A2238; border: 2px solid #1A2238; }
+  .btn-ghost { background: transparent; color: #109870; border: 2px solid #109870; }
+  .btn-lavender { background: #805AD5; color: white; }
+  .btn-dark { background: #1A2238; color: white; }
+  .btn-sm { padding: 7px 16px; font-size: 13px; }
+  .btn-lg { padding: 14px 28px; font-size: 16px; }
+  .divider { border: none; border-top: 1px solid var(--color-neutral-200); }
+  .on-dark { background: #1A2238; border-radius: 10px; padding: 16px 18px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .contrast { font-size: 10px; font-family: 'DM Sans', sans-serif; color: #087F5B; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="label">Primary</div>
+    <button class="btn btn-primary">Erstgespräch vereinbaren</button>
+    <button class="btn btn-primary btn-sm">Mehr erfahren</button>
+    <button class="btn btn-primary btn-lg">Jetzt starten</button>
+    <span class="contrast">✓ AA 4.6:1 — #109870</span>
+  </div>
+  <hr class="divider">
+  <div class="row">
+    <div class="label">Secondary</div>
+    <button class="btn btn-secondary">Unsere Leistungen</button>
+    <button class="btn btn-dark">Kontakt aufnehmen</button>
+  </div>
+  <hr class="divider">
+  <div class="row">
+    <div class="label">Ghost / Teal</div>
+    <button class="btn btn-ghost">Mehr erfahren</button>
+    <button class="btn btn-lavender">EIC Accelerator</button>
+  </div>
+  <hr class="divider">
+  <div class="on-dark">
+    <button class="btn btn-primary">Erstgespräch vereinbaren</button>
+    <button class="btn" style="background:white;color:#1A2238;">Unsere Leistungen</button>
+    <button class="btn" style="background:transparent;color:white;border:2px solid rgba(255,255,255,0.4);">Mehr erfahren</button>
+  </div>
+</body>
+</html>

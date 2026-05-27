@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--color-alabaster); font-family: var(--font-body); padding: 24px 28px; display: flex; flex-direction: column; gap: 20px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-muted); width: 100%; margin-bottom: 4px; }
+  .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; padding: 4px 11px; border-radius: 9999px; }
+  .badge-teal { background: #E6FBF5; color: #087F5B; }
+  .badge-lavender { background: #F3EEFF; color: #5435A0; }
+  .badge-navy { background: #EEF0F5; color: #1A2238; }
+  .badge-solid-teal { background: #20C997; color: white; }
+  .badge-solid-lavender { background: #805AD5; color: white; }
+  .badge-solid-navy { background: #1A2238; color: white; }
+  .tag { display: inline-flex; align-items: center; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 9999px; border: 1px solid; }
+  .tag-teal { border-color: #20C997; color: #20C997; }
+  .tag-lavender { border-color: #805AD5; color: #805AD5; }
+  .tag-navy { border-color: #1A2238; color: #1A2238; }
+  .divider { border: none; border-top: 1px solid var(--color-neutral-200); }
+</style>
+</head>
+<body>
+  <div>
+    <div class="label">Soft Badges</div>
+    <div class="row">
+      <span class="badge badge-teal">MedTech</span>
+      <span class="badge badge-teal">Life Science</span>
+      <span class="badge badge-lavender">EIC Accelerator</span>
+      <span class="badge badge-lavender">Eurostars</span>
+      <span class="badge badge-navy">KMU innovativ</span>
+      <span class="badge badge-navy">ZIM</span>
+    </div>
+  </div>
+  <hr class="divider">
+  <div>
+    <div class="label">Solid Badges</div>
+    <div class="row">
+      <span class="badge badge-solid-teal">Biotech</span>
+      <span class="badge badge-solid-lavender">Horizont Europa</span>
+      <span class="badge badge-solid-navy">BMBF</span>
+    </div>
+  </div>
+  <hr class="divider">
+  <div>
+    <div class="label">Outlined Tags</div>
+    <div class="row">
+      <span class="tag tag-teal">DE + EN</span>
+      <span class="tag tag-lavender">Hamburg</span>
+      <span class="tag tag-navy">Full-Service</span>
+      <span class="tag tag-teal">Erfolgsbasiert</span>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #F0F4F8; font-family: var(--font-body); padding: 24px; display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; }
+
+  .card {
+    background: white;
+    border-radius: 14px;
+    padding: 28px 24px;
+    width: 196px;
+    box-shadow: 0 1px 4px rgba(26,34,56,0.06), 0 4px 16px rgba(26,34,56,0.07);
+    display: flex; flex-direction: column; gap: 14px;
+    border: 1px solid rgba(26,34,56,0.06);
+  }
+  .card-icon-wrap {
+    width: 42px; height: 42px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .card-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+  }
+  .card-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 700;
+    line-height: 1.3; color: #1A2238;
+  }
+  .card-body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12.5px; line-height: 1.65; color: #4A5568;
+  }
+
+  /* Dark variant */
+  .card-dark { background: #1A2238; border-color: rgba(255,255,255,0.06); }
+  .card-dark .card-title { color: white; }
+  .card-dark .card-body { color: rgba(255,255,255,0.6); }
+
+  /* Teal accent variant */
+  .card-teal { background: #109870; border-color: transparent; }
+  .card-teal .card-title { color: white; }
+  .card-teal .card-body { color: rgba(255,255,255,0.82); }
+  .card-teal .card-tag { color: rgba(255,255,255,0.7); }
+
+  /* Divider line accent at top */
+  .card-accented { border-top: 3px solid #109870; }
+</style>
+</head>
+<body>
+
+  <!-- White with top accent -->
+  <div class="card card-accented">
+    <div class="card-icon-wrap" style="background:#E6FBF5;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#109870" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+    </div>
+    <div class="card-tag" style="color:#109870;">Förder-Strategie</div>
+    <div class="card-title">Programmauswahl & Strategie</div>
+    <div class="card-body">Analyse der Projektsituation und Empfehlung optimaler Förderinstrumente.</div>
+  </div>
+
+  <!-- White plain -->
+  <div class="card">
+    <div class="card-icon-wrap" style="background:#F3EEFF;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#805AD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    </div>
+    <div class="card-tag" style="color:#805AD5;">Full-Service</div>
+    <div class="card-title">Antragstellung & Einreichung</div>
+    <div class="card-body">Von der Projektskizze bis zur Einreichung — wir übernehmen den Prozess.</div>
+  </div>
+
+  <!-- Dark navy -->
+  <div class="card card-dark">
+    <div class="card-icon-wrap" style="background:rgba(16,152,112,0.15);">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#20C997" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    </div>
+    <div class="card-tag" style="color:#20C997;">EU-Programme</div>
+    <div class="card-title">EIC Accelerator & Eurostars</div>
+    <div class="card-body">Spezialisierter Support für hochkompetitive EU-Förderprogramme.</div>
+  </div>
+
+  <!-- Teal solid -->
+  <div class="card card-teal">
+    <div class="card-icon-wrap" style="background:rgba(255,255,255,0.18);">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+    </div>
+    <div class="card-tag">Projektbegleitung</div>
+    <div class="card-title">Abwicklung & Berichtswesen</div>
+    <div class="card-body">Zwischenberichte, Verwendungsnachweise, Kommunikation mit Förderbehörden.</div>
+  </div>
+
+</body>
+</html>

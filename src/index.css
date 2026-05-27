@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F7FAFC;
+  font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --color-navy:      #1A2238;
+  --color-teal:      #20C997;
+  --color-lavender:  #805AD5;
+  --color-slate:     #4A5568;
+  --color-alabaster: #F7FAFC;
+  --color-white:     #FFFFFF;
+
+  --color-teal-50:   #E6FBF5;
+  --color-teal-100:  #B3F1E0;
+  --color-teal-200:  #66E3C1;
+  --color-teal-300:  #33D9A8;
+  --color-teal-400:  #20C997;
+  --color-teal-500:  #18B087;
+  --color-teal-600:  #109870;
+  --color-teal-700:  #087F5B;
+
+  --color-navy-50:   #EEF0F5;
+  --color-navy-100:  #C5CBD9;
+  --color-navy-200:  #8C97B3;
+  --color-navy-300:  #5A6685;
+  --color-navy-400:  #2E3E5E;
+  --color-navy-500:  #1A2238;
+  --color-navy-600:  #131929;
+  --color-navy-700:  #0C101A;
+
+  --color-lavender-50:   #F3EEFF;
+  --color-lavender-100:  #D9C9F5;
+  --color-lavender-200:  #B399EA;
+  --color-lavender-300:  #9B7ADF;
+  --color-lavender-400:  #805AD5;
+  --color-lavender-500:  #6A47BB;
+  --color-lavender-600:  #5435A0;
+
+  --color-neutral-50:  #F7FAFC;
+  --color-neutral-100: #EDF2F7;
+  --color-neutral-200: #E2E8F0;
+  --color-neutral-300: #CBD5E0;
+  --color-neutral-400: #A0AEC0;
+  --color-neutral-500: #718096;
+  --color-neutral-600: #4A5568;
+  --color-neutral-700: #2D3748;
+  --color-neutral-800: #1A202C;
+  --color-neutral-900: #171923;
+
+  --bg-page:          var(--color-alabaster);
+  --bg-card:          var(--color-white);
+  --bg-dark:          var(--color-navy);
+
+  --fg-primary:       var(--color-navy);
+  --fg-body:          var(--color-slate);
+  --fg-muted:         var(--color-neutral-400);
+  --fg-on-dark:       var(--color-white);
+
+  --color-cta:        #109870;
+  --color-cta-hover:  #087F5B;
+  --color-accent:     var(--color-lavender);
+
+  --shadow-sm:  0 2px 8px rgba(26, 34, 56, 0.08);
+  --shadow-md:  0 4px 16px rgba(26, 34, 56, 0.10);
+  --shadow-lg:  0 8px 32px rgba(26, 34, 56, 0.14);
+
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-full: 9999px;
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+
+  --max-w-content: 1200px;
+}
+
+.industry-card {
+  background: white;
+  border-radius: 14px;
+  padding: 32px 28px;
+  box-shadow: 0 2px 16px rgba(26, 34, 56, 0.08);
+  transition: all 250ms ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(26, 34, 56, 0.13);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
