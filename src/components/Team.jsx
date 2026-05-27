@@ -1,5 +1,7 @@
 import React from 'react'
 
+const asset = (file) => `${import.meta.env.BASE_URL}${file}`;
+
 const TeamCard = ({ name, role, company, bio, initials, accentColor, photo }) => (
   <div style={{
     background: 'white', borderRadius: 16, overflow: 'hidden',
@@ -39,19 +41,57 @@ const TeamCard = ({ name, role, company, bio, initials, accentColor, photo }) =>
 )
 
 const Team = () => (
-  <section id="ueber-uns" style={{ background: '#F7FAFC', padding: '96px 32px' }}>
-    <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-      <div style={{ textAlign: 'center', marginBottom: 56 }}>
-        <div style={{ fontSize: 11, fontFamily: 'DM Sans', fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#20C997', marginBottom: 12 }}>Über uns</div>
-        <h2 style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 'clamp(28px, 3.5vw, 42px)', fontWeight: 600, color: '#1A2238', lineHeight: 1.2, marginBottom: 16 }}>
+  <section
+    id="ueber-uns"
+    style={{ background: "#F7FAFC", padding: "96px 32px" }}>
+    <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+      <div style={{ textAlign: "center", marginBottom: 56 }}>
+        <div
+          style={{
+            fontSize: 11,
+            fontFamily: "DM Sans",
+            fontWeight: 600,
+            letterSpacing: "0.12em",
+            textTransform: "uppercase",
+            color: "#20C997",
+            marginBottom: 12,
+          }}>
+          Über uns
+        </div>
+        <h2
+          style={{
+            fontFamily: "DM Sans, sans-serif",
+            fontSize: "clamp(28px, 3.5vw, 42px)",
+            fontWeight: 600,
+            color: "#1A2238",
+            lineHeight: 1.2,
+            marginBottom: 16,
+          }}>
           Zwei Perspektiven. Eine Mission.
         </h2>
-        <p style={{ fontFamily: 'DM Sans', fontSize: 17, color: '#4A5568', lineHeight: 1.65, maxWidth: 560, margin: '0 auto' }}>
-          Wir kombinieren Produktmanagement-Background mit operativer MedTech-Erfahrung – für Beratung, die die Sprache Ihrer Technologie spricht.
+        <p
+          style={{
+            fontFamily: "DM Sans",
+            fontSize: 17,
+            color: "#4A5568",
+            lineHeight: 1.65,
+            maxWidth: 560,
+            margin: "0 auto",
+          }}>
+          Wir kombinieren Produktmanagement-Background mit operativer
+          MedTech-Erfahrung – für Beratung, die die Sprache Ihrer Technologie
+          spricht.
         </p>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 28, maxWidth: 800, margin: '0 auto' }}>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          gap: 28,
+          maxWidth: 800,
+          margin: "0 auto",
+        }}>
         <TeamCard
           name="Magdalena Müller"
           role="Co-Founderin & Beraterin"
@@ -59,7 +99,7 @@ const Team = () => (
           bio="Ich komme aus der Produktwelt – und weiß deshalb, wie man Innovationen so beschreibt, dass Fördergeber sie verstehen. Mein Antrieb: Unternehmen, die echte Wirkung erzielen wollen, auf dem Weg zur Finanzierung begleiten."
           initials="MM"
           accentColor="#20C997"
-          photo="/magda.png"
+          photo={asset("magda.png")}
         />
         <TeamCard
           name="Nicole Klingen"
@@ -68,29 +108,66 @@ const Team = () => (
           bio="Als Unternehmerin im MedTech-Bereich weiß ich, wie viel Energie in ein Forschungsprojekt fließt – und wie wichtig die richtige Finanzierung ist, um es auf die Straße zu bringen."
           initials="NK"
           accentColor="#805AD5"
-          photo="/nicole.jpg"
+          photo={asset("nicole.jpg")}
         />
       </div>
 
       {/* Values strip */}
-      <div style={{ marginTop: 56, display: 'flex', gap: 0, background: '#1A2238', borderRadius: 16, overflow: 'hidden', flexWrap: 'wrap' }}>
+      <div
+        style={{
+          marginTop: 56,
+          display: "flex",
+          gap: 0,
+          background: "#1A2238",
+          borderRadius: 16,
+          overflow: "hidden",
+          flexWrap: "wrap",
+        }}>
         {[
-          { label: 'Direkt', desc: 'Keine Phrasen. Klare Aussagen.' },
-          { label: 'Kompetent', desc: 'Expertise ohne Arroganz.' },
-          { label: 'Empathisch', desc: 'Echtes Interesse an Ihrem Erfolg.' },
-          { label: 'Spezialisiert', desc: 'Life Science, MedTech, Biotech – und sonst nichts.' },
+          { label: "Direkt", desc: "Keine Phrasen. Klare Aussagen." },
+          { label: "Kompetent", desc: "Expertise ohne Arroganz." },
+          { label: "Empathisch", desc: "Echtes Interesse an Ihrem Erfolg." },
+          {
+            label: "Spezialisiert",
+            desc: "Life Science, MedTech, Biotech – und sonst nichts.",
+          },
         ].map((v, i, arr) => (
-          <div key={i} style={{
-            flex: 1, minWidth: 140, padding: '24px 20px', textAlign: 'center',
-            borderRight: i < arr.length - 1 ? '1px solid rgba(255,255,255,0.08)' : 'none',
-          }}>
-            <div style={{ fontFamily: 'DM Sans, sans-serif', fontSize: 17, fontWeight: 600, color: 'white', marginBottom: 6 }}>{v.label}</div>
-            <div style={{ fontFamily: 'DM Sans', fontSize: 12, color: 'rgba(255,255,255,0.5)', lineHeight: 1.5 }}>{v.desc}</div>
+          <div
+            key={i}
+            style={{
+              flex: 1,
+              minWidth: 140,
+              padding: "24px 20px",
+              textAlign: "center",
+              borderRight:
+                i < arr.length - 1
+                  ? "1px solid rgba(255,255,255,0.08)"
+                  : "none",
+            }}>
+            <div
+              style={{
+                fontFamily: "DM Sans, sans-serif",
+                fontSize: 17,
+                fontWeight: 600,
+                color: "white",
+                marginBottom: 6,
+              }}>
+              {v.label}
+            </div>
+            <div
+              style={{
+                fontFamily: "DM Sans",
+                fontSize: 12,
+                color: "rgba(255,255,255,0.5)",
+                lineHeight: 1.5,
+              }}>
+              {v.desc}
+            </div>
           </div>
         ))}
       </div>
     </div>
   </section>
-)
+);
 
 export default Team
